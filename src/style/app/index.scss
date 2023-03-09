@@ -1,0 +1,35 @@
+@import "../functions/index";
+
+.App {
+  display: flex;
+  flex-flow: column;
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  height: toRem(70);
+  div:nth-child(1) {
+    width: 50%;
+    background-color: #ffffff;
+
+    img {
+      width: toRem(243);
+      height: toRem(51);
+      margin: toRem(9) 0 0 toRem(50);
+    }
+  }
+  div:nth-child(2) {
+    width: 50%;
+    background-color: #b4cd25;
+    h2 {
+      font-size: toRem(22);
+      font-family: "Quicksand";
+      color: #ffffff;
+      margin: toRem(20) 0 0 toRem(20);
+    }
+  }
+}
