@@ -1,0 +1,17 @@
+
+@mixin flexRow {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  @mixin flexRowWrap {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  @mixin flexColumn {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  @mixin flexColumnWrap {
+    display: flex;
+    flex-flow: column wrap;
+  }

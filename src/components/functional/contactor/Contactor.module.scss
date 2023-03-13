@@ -1,0 +1,36 @@
+@import "../../../styles/functions/index.scss";
+@import "../../../styles/mixin/index.scss";
+
+.contactor {
+  @include flexColumn;
+  padding: 0 0 toRem(15) 0;
+  > div:nth-child(1) {
+  }
+
+  > div:nth-child(2) {
+    @include flexColumn;
+    margin-top: toRem(38);
+    align-items: center;
+    gap: toRem(34);
+    > div:nth-child(1) {
+      @include flexColumn;
+      gap: toRem(5);
+      > div:nth-child(1) {
+        width: toRem(340);
+        @include flexRow;
+        align-items: center;
+        justify-content: space-between;
+        >div:nth-child(2){
+            @include flexRow;
+            gap:toRem(10.37);
+            align-items: center;
+            >h3{
+                font-weight: 700;
+                line-height: toRem(20);
+                color: #666666;
+            }
+        }
+      }
+    }
+  }
+}

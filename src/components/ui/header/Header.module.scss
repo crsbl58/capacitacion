@@ -1,0 +1,24 @@
+@import "../../../styles/functions/index.scss";
+
+.header {
+  display: flex;
+  height: toRem(70);
+  border-bottom: toRem(1) solid #cccccc;
+  > div:nth-child(1) {
+    width: 50%;
+    background-color: #ffffff;
+    > img {
+      margin: toRem(9) 0 0 toRem(50);
+    }
+  }
+  > div:nth-child(2) {
+    width: 50%;
+    background-color: #b4cd25;
+    h2 {
+      font-size: toRem(22);
+      font-family: "Quicksand";
+      color: #ffffff;
+      margin: toRem(20) 0 0 toRem(20);
+    }
+  }
+}

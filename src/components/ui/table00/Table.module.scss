@@ -1,0 +1,76 @@
+@import "../../../styles/mixin/index.scss";
+@import "../../../styles/functions/index.scss";
+.Table00 {
+  @include flexColumn;
+  > div:nth-child(1) {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: toRem(2);
+    height: toRem(40);
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #b4cd25;
+      color: #ffffff;
+      font-family: "Quicksand";
+      font-size: toRem(16);
+      font-weight: 700;
+      line-height: toRem(20);
+    }
+    h2:nth-child(1) {
+      width: toRem(223);
+    }
+    h2:nth-child(2) {
+      width: toRem(108);
+    }
+    h2:nth-child(3) {
+      width: toRem(156);
+    }
+    h2:nth-child(4) {
+      width: toRem(91);
+    }
+    h2:nth-child(5) {
+      width: toRem(98);
+    }
+  }
+  > div:nth-child(2) {
+    @include flexColumn;
+    margin-top: toRem(2);
+    gap: toRem(2);
+    > div {
+      display: flex;
+      flex-flow: row nowrap;
+
+      gap: toRem(2);
+
+      h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: toRem(40);
+        background-color: rgba(0, 0, 0, 0.6);
+        font-family: "Oswald";
+        font-size: toRem(16);
+        font-weight: 400;
+        line-height: toRem(23.71);
+   color: rgba(255, 255, 255, .7);
+      }
+      h2:nth-child(1) {
+        width: toRem(223);
+      }
+      h2:nth-child(2) {
+        width: toRem(108);
+      }
+      h2:nth-child(3) {
+        width: toRem(156);
+      }
+      h2:nth-child(4) {
+        width: toRem(91);
+      }
+      h2:nth-child(5) {
+        width: toRem(98);
+      }
+    }
+  }
+}
