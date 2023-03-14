@@ -2,11 +2,14 @@
 @import "../../../styles/mixin/index.scss";
 
 .contactor {
-  @include flexColumn;
-  padding: 0 0 toRem(15) 0;
+  @include flexRow;
+  justify-content: center;
+  position: relative;
   > div:nth-child(1) {
+    position: absolute;
+    top: toRem(123);
+    left: toRem(30);
   }
-
   > div:nth-child(2) {
     @include flexColumn;
     margin-top: toRem(38);
@@ -20,15 +23,15 @@
         @include flexRow;
         align-items: center;
         justify-content: space-between;
-        >div:nth-child(2){
-            @include flexRow;
-            gap:toRem(10.37);
-            align-items: center;
-            >h3{
-                font-weight: 700;
-                line-height: toRem(20);
-                color: #666666;
-            }
+        > div:nth-child(2) {
+          @include flexRow;
+          gap: toRem(10.37);
+          align-items: center;
+          > h3 {
+            font-weight: 700;
+            line-height: toRem(20);
+            color: #666666;
+          }
         }
       }
     }

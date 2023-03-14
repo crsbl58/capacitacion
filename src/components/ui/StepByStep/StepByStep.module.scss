@@ -1,0 +1,41 @@
+@import "../../../styles/functions/index.scss";
+@import "../../../styles/mixin/index.scss";
+
+.stepByStep {
+  @include flexColumn;
+  gap: toRem(13);
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: solid toRem(2) #959595;
+    border-left-style: dotted;
+    left: toRem(15);
+    z-index: -1;
+  }
+  > div {
+    @include flexRow;
+    justify-content: flex-start;
+    gap: toRem(5);
+    align-items: center;
+    width: toRem(207);
+    border-radius: toRem(15);
+    > h3 {
+      font-weight: 600;
+      color: #ffffff;
+    }
+    > h3:nth-child(1) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: toRem(20);
+      width: toRem(30);
+      height: toRem(30);
+      border-radius: 50%;
+    }
+    > h3:nth-child(2) {
+    }
+  }
+}

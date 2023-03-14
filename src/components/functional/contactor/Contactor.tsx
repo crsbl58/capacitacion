@@ -1,22 +1,30 @@
 import Button00 from '@/components/ui/button00'
 import Icon from '@/components/ui/icon00/Icon'
 import InputText from '@/components/ui/inputText'
-import Image from 'next/image'
+import StepByStep from '@/components/ui/StepByStep/StepByStep'
 import React from 'react'
-import conversions from '../../conversions/index'
 import styles from './Contactor.module.scss'
 
 const Contactor = () => {
     return (
         <div className={styles.contactor}>
-            <div></div>
+            <div>
+                <StepByStep arraySteps={[
+                    { name: 'Descripción', state: 'active' },
+                    { name: 'Contratante', state: 'active' },
+                    { name: 'Titular', state: 'active' },
+                    { name: 'Datos del producto', state: 'current' },
+                    { name: 'Cargas', state: 'disable' },
+                    { name: 'Pago', state: 'disable' }
+                ]} />
+            </div>
             <div>
                 <div>
                     <div>
                         <InputText width={168} text="Rut" type={"text"} />
                         <div>
-                            <Icon color='#666666' name='emoji_people'/>
-                           
+                            <Icon color='#666666' name='emoji_people' />
+
                             <h3>Persona</h3>
                         </div>
                     </div>
@@ -30,6 +38,7 @@ const Contactor = () => {
                 </div>
                 <Button00 onClick={() => { console.log('Modal Contacto') }} text='Registrar' />
             </div>
+          
         </div>
     )
 }
