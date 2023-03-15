@@ -2,28 +2,28 @@
 import InputText from '@/components/ui/inputText'
 import Link00 from '@/components/ui/link00'
 import Button00 from '@/components/ui/button00'
-import React from 'react'
+import { Col, Container } from '@/components/layout/generic'
 import styles from './Login.module.scss'
 import { useRouter } from 'next/router'
 
 const Login = () => {
     const router = useRouter();
-    console.log(router)
+    const handleClickEnter = () => {
+        router.push('description')
+    }
     return (
-
-        <div className={styles.login}>
-            <div>
-                <div>
-                    <InputText width={260}  text="Correo electrónico" type={"text"} />
-                    <InputText width={260}  text="Contraseña" type={"password"} />
-
-                </div>
-                <div>
-                    <Button00 text="ingresar" onClick={() => { router.push('/login/description') }} />
+        <Container type='flex' justifyContent='center' alignItems='center'>
+            <Col>
+                <Col gap={5}>
+                    <InputText width={260} text="Correo electrónico" type={"text"} />
+                    <InputText width={260} text="Contraseña" type={"password"} />
+                </Col>
+                <Col gap={30} padding={[30, 0, 0, 0]} alignItems='center' >
+                    <Button00 width={200} text="ingresar" onClick={() => { handleClickEnter() }} />
                     <Link00 text='Olvidé mi contraseña' />
-                </div>
-            </div>
-        </div>
+                </Col>
+            </Col>
+        </Container>
     )
 }
 

@@ -2,25 +2,12 @@
 @import "../../../styles/mixin/index.scss";
 .description {
   position: relative;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(4, auto);
-  align-items: center;
-  justify-content: center;
   background-image: url("../../../img/backGround00.png");
   background-repeat: no-repeat;
   background-size: toRem(894) toRem(554);
   background-position: center 0;
+
   > div:nth-child(1) {
-    align-items: center;
-    grid-column-end: 1;
-    grid-column-start: 4;
-    grid-row-end: 1;
-    grid-row-start: 2;
-    margin-top: toRem(20);
-    @include flexColumn;
     h1 {
       font-weight: 700;
       font-family: Verdana;
@@ -35,8 +22,8 @@
       line-height: toRem(32.81);
       color: #b4cd25;
     }
-  }
-  > div:nth-child(2) {
+  } 
+ /*  > div:nth-child(2) {
     grid-column-end: 1;
     grid-column-start: 4;
     grid-row-end: 2;
@@ -61,6 +48,8 @@
       }
     }
   }
+
+
   > div:nth-child(3) {
     margin-top: toRem(42);
     padding: 0 0 toRem(40) 0;
@@ -89,5 +78,5 @@
         color: #555555;
       }
     }
-  }
+  } */
 }

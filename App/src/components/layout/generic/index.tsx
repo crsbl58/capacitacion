@@ -1,3 +1,3 @@
-import {Col,Row} from './Generic'
+import { Col, Row, Container, Grid } from './Generic'
 
-export {Col,Row};
+export { Col, Row, Container, Grid };
