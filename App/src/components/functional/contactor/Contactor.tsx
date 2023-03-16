@@ -1,4 +1,4 @@
-import Button00 from '@/components/ui/button00'
+import Button from '@/components/ui/button'
 import Icon from '@/components/ui/icon00/Icon'
 import InputText from '@/components/ui/inputText'
 import StepByStep from '@/components/ui/StepByStep/StepByStep'
@@ -36,7 +36,7 @@ const Contactor = () => {
                     <InputText width={340} text="Correo electrónico" type={"text"} />
                     <InputText width={340} text="Teléfono" type={"text"} />
                 </div>
-                <Button00 onClick={() => { console.log('Modal Contacto') }} text='Registrar' />
+                <Button width={200} onClick={() => { console.log('Modal Contacto') }} text='Registrar' />
             </div>
           
         </div>

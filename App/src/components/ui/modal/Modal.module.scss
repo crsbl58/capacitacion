@@ -1,0 +1,41 @@
+@import "../../../styles/functions/index.scss";
+@import "../../../styles/mixin/index.scss";
+
+.modal {
+  @include flexColumn;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: toRem(10);
+  padding: toRem(20);
+  position: relative;
+  > h2:nth-child(1) {
+    position: absolute;
+    right: toRem(20);
+    top: toRem(20);
+    color: #000000;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    width: toRem(30);
+    height: toRem(30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  > h2:nth-child(2) {
+    font-weight: 500;
+    font-size: toRem(20);
+    line-height: toRem(25);
+    color: #000000;
+    margin-bottom: toRem(30);
+  }
+  > h2:nth-child(3) {
+    color: #666666;
+    margin-bottom: toRem(20);
+  }
+  > div {
+    @include flexRow;
+    gap: toRem(5);
+    margin: 0 toRem(10) toRem(10) toRem(10);
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './screen.module.scss'
+import styles from './Screen.module.scss'
 
 const Screen = ({ children, backgroundColor }: { children: any, backgroundColor: string }) => {
     return (
@@ -9,4 +9,4 @@ const Screen = ({ children, backgroundColor }: { children: any, backgroundColor:
     )
 }
 
-export default Screen
+export default Screen;

@@ -6,24 +6,61 @@
   background-repeat: no-repeat;
   background-size: toRem(894) toRem(554);
   background-position: center 0;
-
   > div:nth-child(1) {
-    h1 {
-      font-weight: 700;
-      font-family: Verdana;
+    > div:nth-child(1) {
+      h1 {
+        font-weight: 700;
+        font-family: Verdana;
+      }
+      h1:nth-child(1) {
+        font-size: toRem(27);
+        line-height: toRem(43.75);
+        color: #959595;
+      }
+      h1:nth-child(2) {
+        font-size: toRem(36);
+        line-height: toRem(32.81);
+        color: #b4cd25;
+      }
     }
-    h1:nth-child(1) {
-      font-size: toRem(27);
-      line-height: toRem(43.75);
-      color: #959595;
+    > div:nth-child(2) {
+      > div:nth-child(1) {
+        > div:nth-child(1) {
+          > p {
+            font-family: "Quicksand";
+            font-style: medium;
+            font-size: toRem(16);
+            line-height: toRem(20);
+            vertical-align: top;
+            color: #555555;
+            font-weight: toRem(500);
+            text-align: justify;
+          }
+        }
+      }
     }
-    h1:nth-child(2) {
-      font-size: toRem(36);
-      line-height: toRem(32.81);
-      color: #b4cd25;
+    > div:nth-child(3) {
+      > div:nth-child(1) {
+    
+        >div:nth-child(1){
+          > h3:nth-child(1) {
+            text-decoration-line: line-through;
+            font-weight: 500;
+            line-height: toRem(20);
+            color: #666666;
+          }
+          > h3:nth-child(2) {
+            font-weight: 500;
+            line-height: toRem(25);
+            font-size: toRem(20);
+            color: #555555;
+          }
+        }
+      }
     }
-  } 
- /*  > div:nth-child(2) {
+  }
+
+  /*  > div:nth-child(2) {
     grid-column-end: 1;
     grid-column-start: 4;
     grid-row-end: 2;

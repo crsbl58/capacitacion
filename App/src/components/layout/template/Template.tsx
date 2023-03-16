@@ -1,20 +1,21 @@
-import React from 'react'
-import Screen from '../screen'
+import { useState } from 'react'
+
+import Screen from '@/components/layout/screen'
 import Header from '@/components/ui/header'
-import styles from './template.module.scss'
-import Modal00 from '@/components/ui/modal00/Modal00'
-import Button00 from '@/components/ui/button00'
+import styles from '@/components/layout/template/template.module.scss'
+import Modal from '@/components/ui/modal/Modal'
+import Button from '@/components/ui/button'
 
 const Template = ({ children }: { children: any }) => {
-    console.log(children);
+    const [stateModal, setStateModal] = useState(false)
     return (<Screen backgroundColor=''>
         <div className={styles.template00}>
             <Header />
             <div className={styles.template02}>{children}</div>
-            <Modal00 title='Asegurado titular' text='¿Quién es el asegurado titular?' state={false} >
-                <Button00 width={150} text="Soy yo" onClick={() => { }} />
-                <Button00 width={150} text="Otra persona" onClick={() => { }} />
-            </Modal00>
+            {stateModal && <Modal title='Asegurado titular' text='¿Quién es el asegurado titular?'>
+                <Button width={150} text="Soy yo" onClick={() => { }} />
+                <Button width={150} text="Otra persona" onClick={() => { }} />
+            </Modal>}
         </div>
 
     </Screen >
